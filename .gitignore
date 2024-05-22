@@ -1,0 +1,46 @@
+# Ambiente virtual
+venv/
+ENV/
+env/
+
+# Diretórios e arquivos Python compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configurações do editor
+.vscode/
+.idea/
+*.swp
+
+# Arquivos de log e de banco de dados local
+*.log
+db.sqlite3
+*.sqlite3
+
+# Arquivos temporários e backups
+*.bak
+*.tmp
+
+# Arquivos de segurança
+*.pem
+*.key
+
+# Arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de cache
+*.cache
+*.tgz
+*.gz
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info/
+
+# Arquivos específicos de projeto Django
+staticfiles/
+media/
+node_modules/
