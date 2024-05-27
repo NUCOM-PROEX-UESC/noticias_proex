@@ -1,5 +1,4 @@
 from django.db import models
-from ckeditor.fields import RichTextField
 from django.conf import settings
 
 class News(models.Model):
@@ -12,7 +11,7 @@ class News(models.Model):
     titulo = models.CharField(max_length=200)
     subtitulo = models.CharField(max_length=200)
     lead = models.CharField(max_length=255)
-    corpo = RichTextField()
+    corpo = models.TextField()  # Alterado de RichTextField para TextField
     criador = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='news_created')
     supervisor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, blank=True, related_name='news_supervised')
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pending')

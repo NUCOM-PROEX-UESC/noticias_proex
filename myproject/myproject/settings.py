@@ -31,19 +31,12 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5505",
     "http://127.0.0.1:5500",
     "http://localhost:5500",
-    "http://localhost:3000",
-    "http://localhost:5500",  # Adicione a origem do seu frontend
-    "http://127.0.0.1:5500",
-    "http://localhost:5505",  # Adicione a origem do seu frontend
     "http://127.0.0.1:5505",
+    "http://localhost:5505",
+    "http://localhost:3000",
 ]
-
-# Permitir credenciais (cookies, tokens, etc.)
-CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
